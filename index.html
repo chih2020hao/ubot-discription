@@ -5,14 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Ubot使用說明</title>
+  <style>
+    .ff{
+      font-family: '微軟正黑體';
+    }
+    .mt-6{
+      margin-top: 100px;
+    }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <h2>Ubot使用說明</h2>
-    <h3>Ubot是一款可以幫使用者找到附近500公尺內的Ubike站點，並查看該站點可借車輛數及可還空位數的查詢機器人</h3>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="100" class="bg-secondary">
+  <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+    <a class="navbar-brand text-white" href="#">
+      <img src="youbike_logo.png" width="50"  height="50">Ubot
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link ff" href="#top">回頂端</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" href="#location">位置訊息</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" href="#signIn">註冊</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff" href="#others">其他</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-6">
+    <h2 id="top" class="text-white">Ubot使用說明</h2>
+    <h3 class="text-white">Ubot是一款可以幫使用者找到附近500公尺內的Ubike站點，並查看該站點可借車輛數及可還空位數的查詢機器人</h3>
+    <hr>
     <div class="row">
-      <div class="col-12 col-lg-3">
-        <div class="card" style="width: 18rem;">
+      <h2 id="location" class="text-white mt-5 col-12">傳送位置訊息</h2>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
           <img src="discription1.jpg" class="card-img-top">
           <div class="card-body">
             <h4 class="card-title">傳送位置訊息-步驟 1</h4>
@@ -20,13 +56,80 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3">
-        <div class="card" style="width: 18rem;">
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
           <img src="discription-location.jpg" class="card-img-top">
           <div class="card-body">
             <h4 class="card-title">傳送位置訊息-步驟 2</h4>
             <p class="card-text">機器人收到指令後會回傳一段訊息，於聊天室底部會出現圖中框起來的傳送位置訊息小按鈕</p>
-            <p class="card-text">按下按鈕就可以開啟傳送位置訊息的視窗</p>
+            <p class="card-text">按下按鈕就可以開啟傳送位置訊息的地圖視窗</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="discription-location2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">傳送位置訊息-步驟 3</h4>
+            <p class="card-text">地圖視窗開啟後，會自動標示目前所在位置，可以拖曳畫面選擇預借(還)車地區</p>
+            <p class="card-text">按圖中框起來的對話框後即可送出位置訊息，機器人收到後會搜尋傳送的位置附近500公尺內的站點並回傳相關訊息</p>
+          </div>
+        </div>
+      </div>
+      <h2 id="signIn" class="text-white mt-5 col-12">註冊</h2>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="discription-signin.jpg" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">如果您未曾註冊過 Ubike 或 T-bike 可以點圖中框起來的兩個按鈕(請依照您要借用的車輛種類)進行註冊</p>
+            <p class="card-text">註冊時需輸入悠遊卡或一卡通的卡號</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="card_img.jpg" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">悠遊卡的卡號位於卡片背面右下，如上圖左邊框起來的地方，共 10 碼</p>
+            <p class="card-text">悠遊聯名卡的卡號位於卡片背面左下，如上圖右邊框起來的地方，共 16 碼</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="card.png" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text">一卡通的卡號位於卡片背面右下，如上圖框起來的地方，共 11 碼</p>
+          </div>
+        </div>
+      </div>
+      <h2 id="others" class="text-white mt-5 col-12">其他</h2>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="discription1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">傳送位置訊息-步驟 1</h4>
+            <p class="card-text">點選圖片中框起來的傳送位置訊息選項送出傳送位置訊息的指令</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="discription-location.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">傳送位置訊息-步驟 2</h4>
+            <p class="card-text">機器人收到指令後會回傳一段訊息，於聊天室底部會出現圖中框起來的傳送位置訊息小按鈕</p>
+            <p class="card-text">按下按鈕就可以開啟傳送位置訊息的地圖視窗</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card w-100" style="width: 18rem;">
+          <img src="discription-location2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">傳送位置訊息-步驟 3</h4>
+            <p class="card-text">地圖視窗開啟後，會自動標示目前所在位置，可以拖曳畫面選擇預借(還)車地區</p>
+            <p class="card-text">按下框起來的對話框後即可送出位置訊息，機器人收到後會搜尋傳送的位置附近500公尺內的站點並回傳相關訊息</p>
           </div>
         </div>
       </div>
